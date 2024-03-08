@@ -1,0 +1,25 @@
+{
+  "storage": {
+    "input": {
+      "files": [],
+      "tables": []
+    },
+    "output": {
+      "files": [],
+      "tables": []
+    }
+  },
+  "parameters": {
+    "credentials": {
+      "#api_token": "token"
+    },
+    "debug": true,
+    "flow_id": "12345",
+    "wait_until_finished": true,
+    "fail_on_warning": true
+  },
+  "action":"run",
+  "image_parameters": {
+    "syrup_url": "https://syrup.keboola.com/"
+  }
+}
