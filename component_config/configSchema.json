@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "title": "Component configuration",
+  "required": [
+    "credentials"
+  ],
+  "properties": {
+    "credentials": {
+      "type": "object",
+      "title": "Authorization",
+      "required": [
+        "#api_token"
+      ],
+      "properties": {
+        "#api_token": {
+          "type": "string",
+          "format": "password",
+          "title": "Portable API token",
+          "propertyOrder": 1
+        }
+      },
+      "propertyOrder": 1
+    }
+  }
+}
