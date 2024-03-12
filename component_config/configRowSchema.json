@@ -6,7 +6,7 @@
   "properties": {
     "flow_id": {
       "type": "string",
-      "title": "Flow ID",
+      "title": "Portable.io Flow ID",
       "propertyOrder": 30,
       "enum": [],
       "format": "select",
@@ -32,7 +32,7 @@
           "default": false,
           "propertyOrder": 40,
           "options": {
-            "tooltip": "If selected, the component will wait for the execution of the flow in Portable to complete."
+            "tooltip": "If selected, the component will wait for the execution of the flow in Portable.io to complete."
           }
         }
       }

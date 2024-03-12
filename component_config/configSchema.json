@@ -15,7 +15,7 @@
         "#api_token": {
           "type": "string",
           "format": "password",
-          "title": "Portable API token",
+          "title": "Portable.io API token",
           "propertyOrder": 1
         }
       },
