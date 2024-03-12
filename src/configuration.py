@@ -61,8 +61,12 @@ class Credentials(ConfigurationBase):
 
 
 @dataclass
+class RunParameters(ConfigurationBase):
+    wait_until_finished: bool
+
+
+@dataclass
 class Configuration(ConfigurationBase):
     credentials: Credentials = field(default_factory=lambda: ConfigTree({}))
     flow_id: str = ""
-    wait_until_finished: bool = False
-    fail_on_error: bool = False
+    run_parameters: RunParameters = field(default_factory=lambda: ConfigTree({}))

@@ -19,23 +19,21 @@
       },
       "uniqueItems": true
     },
-    "wait_until_finished": {
-      "type": "boolean",
-      "format": "checkbox",
-      "title": "Wait for flow run to finish.",
-      "default": false,
-      "propertyOrder": 40
-    },
-    "fail_on_error": {
-      "type": "boolean",
-      "format": "checkbox",
-      "title": "Fail job when Flow return error.",
-      "default": false,
-      "propertyOrder": 45,
-      "description": "When checked, the Keboola job will fail when the flow ends with an error status.",
-      "options": {
-        "dependencies": {
-          "waitUntilFinish": true
+    "run_parameters": {
+      "propertyOrder": 60,
+      "title": "Run parameters",
+      "type": "object",
+      "description": "",
+      "properties":{
+        "wait_until_finished": {
+          "type": "boolean",
+          "format": "checkbox",
+          "title": "Wait for Completion",
+          "default": false,
+          "propertyOrder": 40,
+          "options": {
+            "tooltip": "If selected, the component will wait for the execution of the flow in Portable to complete."
+          }
         }
       }
     }

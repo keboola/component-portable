@@ -15,8 +15,9 @@
     },
     "debug": true,
     "flow_id": "12345",
-    "wait_until_finished": true,
-    "fail_on_warning": true
+    "run_parameters": {
+    "wait_until_finished": true
+  }
   },
   "action":"run",
   "image_parameters": {

@@ -47,7 +47,7 @@ class Component(ComponentBase):
         else:
             logging.warning(f"Flow run not created with status {result}")
 
-        while self.cfg.wait_until_finished:
+        while self.cfg.run_parameters.wait_until_finished:
 
             status = self.client.get_flow_status(self.cfg.flow_id)
             if status['lifecycle'] == 'PENDING':
@@ -56,9 +56,9 @@ class Component(ComponentBase):
                 logging.info("Flow is running")
             else:
                 logging.info(f"Flow finished with status {status}")
-                if self.cfg.fail_on_error:
-                    if status['errors'] is not None:
-                        raise UserException(f"Flow finished with error: {str(status['errors'])}")
+                if status['errors'] is not None:
+                    raise UserException(f"Flow finished with error: {str(status['errors'])}")
+
                 break
 
             time.sleep(10)
