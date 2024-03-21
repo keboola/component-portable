@@ -1,4 +1,4 @@
-Portable
+Portable.io Flow Runner
 =============
 
 Description
@@ -9,6 +9,8 @@ Description
 
 Functionality notes
 ===================
+
+Portable.io is currently available only for customers in the U.S.
 
 Prerequisites
 =============

@@ -1,1 +1,1 @@
-Portable long description
+The Portable.io Flow Runner enables the triggering of flows in Portable.io. It provides an option to wait for completion, which can be useful for further processing of the obtained data.

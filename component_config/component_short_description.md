@@ -1,1 +1,1 @@
-Portable short description
+Portable.io is a cloud ETL platform that supports more than a thousand data sources.
