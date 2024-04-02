@@ -63,6 +63,13 @@ class Component(ComponentBase):
 
             time.sleep(10)
 
+    @sync_action('testConnection')
+    def test_connection(self):
+        self._init_configuration()
+        self._init_client()
+
+        self.client.test_connection()
+
     @sync_action('list_flows')
     def list_flows(self):
         self._init_configuration()

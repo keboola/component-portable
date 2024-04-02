@@ -17,6 +17,11 @@
           "format": "password",
           "title": "Portable.io API token",
           "propertyOrder": 1
+        },
+        "test_connection": {
+          "type": "button",
+          "format": "test-connection",
+          "propertyOrder": 2
         }
       },
       "propertyOrder": 1
