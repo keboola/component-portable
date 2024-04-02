@@ -19,7 +19,7 @@ class PortableClient(HttpClient):
         try:
             self.get("connectors")
         except HTTPError:
-            raise UserException(f"Error while testing connection, please check your API token")
+            raise UserException("Error while testing connection, please check your API token")
 
     def list_connectors(self) -> dict:
         """
