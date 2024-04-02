@@ -62,7 +62,7 @@ class Credentials(ConfigurationBase):
 
 @dataclass
 class RunParameters(ConfigurationBase):
-    wait_until_finished: bool
+    wait_until_finished: bool = False
 
 
 @dataclass
